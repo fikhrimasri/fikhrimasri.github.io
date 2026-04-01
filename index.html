@@ -53,12 +53,30 @@
 
     <main id="main" class="terminal-window">
       <header class="terminal-bar">
-        <div class="window-controls" aria-hidden="true">
-          <span class="control control-close"></span>
-          <span class="control control-minimize"></span>
-          <span class="control control-expand"></span>
+        <div class="browser-nav" aria-hidden="true">
+          <div class="window-controls">
+            <span class="control control-close"></span>
+            <span class="control control-minimize"></span>
+            <span class="control control-expand"></span>
+          </div>
+          <button class="toolbar-button sidebar-button" type="button" tabindex="-1">
+            <span class="sidebar-glyph"></span>
+            <span class="toolbar-chevron"></span>
+          </button>
+          <div class="nav-icons">
+            <span class="nav-icon nav-back"></span>
+            <span class="nav-icon nav-forward"></span>
+          </div>
         </div>
-        <div class="terminal-title">fikhri@portfolio:~ /data-platform-console</div>
+        <div class="address-bar">
+          <span class="address-device" aria-hidden="true"></span>
+          <div class="terminal-title">fikhri@portfolio:~ /data-platform-console</div>
+          <div class="address-actions" aria-hidden="true">
+            <span class="address-action address-translate"></span>
+            <span class="address-action address-share-mini"></span>
+            <span class="address-refresh"></span>
+          </div>
+        </div>
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">theme</button>
       </header>
 
@@ -81,16 +99,16 @@
                 </div>
                 <div class="output-content">
                   <div class="metric-row">
-                    <div class="metric-item"><span class="metric-key">revenue_supported</span><strong>IDR xxxB</strong></div>
-                    <div class="metric-item"><span class="metric-key">pipeline_speed</span><strong>+70%</strong></div>
-                    <div class="metric-item"><span class="metric-key">cost_saved</span><strong>IDR xxB</strong></div>
-                    <div class="metric-item"><span class="metric-key">detection_time</span><strong>&lt;1h</strong></div>
+                    <div class="metric-item"><span class="metric-key">revenue supported</span><strong>IDR xxxB</strong></div>
+                    <div class="metric-item"><span class="metric-key">pipeline improvement</span><strong>70%</strong></div>
+                    <div class="metric-item"><span class="metric-key">cost saved</span><strong>IDR xxB</strong></div>
+                    <div class="metric-item"><span class="metric-key">issue detection</span><strong>&lt;1h</strong></div>
                   </div>
                   <div class="log-module">
                     <div class="log-title">[system_profile]</div>
                     <ul class="term-list">
                       <li>+ focused on scalable ETL / ELT and production-grade data delivery</li>
-                      <li>+ experienced with Apache Airflow orchestration and Spark processing</li>
+                      <li>+ experienced with Apache Airflow orchestration, NiFi and Spark processing</li>
                       <li>+ strong in data modeling, governance, and cost-aware platform modernization</li>
                     </ul>
                   </div>
@@ -192,7 +210,7 @@
             <div class="output-content">
               <div class="log-module">
                 <div class="log-title">[Telkomsel — Data Engineer, Data Solutions | Dec 2024–Present]</div>
-                <div class="tag-row"><span class="term-tag">Spark</span><span class="term-tag">Airflow</span><span class="term-tag">GCP</span></div>
+                <div class="tag-row"><span class="term-tag">Python</span><span class="term-tag">Spark</span><span class="term-tag">Airflow</span><span class="term-tag">Ms Power Automate</span></div>
                 <ul class="term-list">
                   <li>+ supported IDR xxxB revenue in B2B monetization</li>
                   <li>+ building production data solutions for analytics delivery</li>
@@ -203,7 +221,7 @@
 
               <div class="log-module">
                 <div class="log-title">[Telkomsel — Data Engineer, Data Sourcing | Jun 2021–Nov 2024]</div>
-                <div class="tag-row"><span class="term-tag">Spark</span><span class="term-tag">Airflow</span><span class="term-tag">Cloudera</span><span class="term-tag">Python</span></div>
+                <div class="tag-row"><span class="term-tag">Spark</span><span class="term-tag">NiFi</span><span class="term-tag">Airflow</span><span class="term-tag">Cloudera</span><span class="term-tag">Python</span></div>
                 <ul class="term-list">
                   <li>+ accelerated pipeline processing by 70%</li>
                   <li>+ saved IDR xxB in development costs</li>
@@ -215,7 +233,7 @@
 
               <div class="log-module">
                 <div class="log-title">[Digital Amoeba Telkom Indonesia — Data Scientist | Nov 2020–May 2021]</div>
-                <div class="tag-row"><span class="term-tag">Python</span><span class="term-tag">Flask</span><span class="term-tag">ML</span></div>
+                <div class="tag-row"><span class="term-tag">Python</span><span class="term-tag">Flask</span><span class="term-tag">ML</span><span class="term-tag">GCP</span></div>
                 <ul class="term-list">
                   <li>+ built applied ML prototypes for product and ops use cases</li>
                   <li>+ worked across experimentation, modeling, and deployment</li>
@@ -276,11 +294,11 @@
               <div class="skill-output">
                 <div class="skill-group">
                   <h3>DATA PROCESSING</h3>
-                  <div class="tag-row"><span class="term-tag">Spark</span><span class="term-tag">PySpark</span><span class="term-tag">Hadoop</span><span class="term-tag">ETL</span><span class="term-tag">ELT</span></div>
+                  <div class="tag-row"><span class="term-tag">Spark</span><span class="term-tag">PySpark</span><span class="term-tag">NiFi</span><span class="term-tag">Hadoop</span><span class="term-tag">ETL</span><span class="term-tag">ELT</span></div>
                 </div>
                 <div class="skill-group">
                   <h3>ORCHESTRATION</h3>
-                  <div class="tag-row"><span class="term-tag">Airflow</span></div>
+                  <div class="tag-row"><span class="term-tag">Airflow</span><span class="term-tag">Ms Power Automate</span></div>
                 </div>
                 <div class="skill-group">
                   <h3>CLOUD</h3>
@@ -359,9 +377,20 @@
               <div class="contact-console">
                 <div class="contact-row"><span>name</span><strong>Fikhri Masri</strong></div>
                 <div class="contact-row"><span>location</span><strong>Jakarta, Indonesia</strong></div>
-                <div class="contact-row"><span>email</span><strong><a href="mailto:masrifikhri@gmail.com">masrifikhri@gmail.com</a></strong><button class="copy-button" type="button" data-copy="masrifikhri@gmail.com">copy</button></div>
-                <div class="contact-row"><span>linkedin</span><strong><a href="https://linkedin.com/in/fikhri-masri" target="_blank" rel="noreferrer">linkedin.com/in/fikhri-masri</a></strong><button class="copy-button" type="button" data-copy="https://linkedin.com/in/fikhri-masri">copy</button></div>
-                <div class="contact-row"><span>github</span><strong><a href="https://github.com/fikhrimasri" target="_blank" rel="noreferrer">github.com/fikhrimasri</a></strong><button class="copy-button" type="button" data-copy="https://github.com/fikhrimasri">copy</button></div>
+                <div class="contact-row contact-row-icons">
+                  <span>links</span>
+                  <div class="contact-icons">
+                    <a class="contact-icon" href="mailto:masrifikhri@gmail.com" aria-label="Email Fikhri Masri">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75h18v10.5H3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m4.5 8.25 7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a class="contact-icon" href="https://linkedin.com/in/fikhri-masri" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.75 8.25a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM5.5 10h2.5v8.5H5.5zM10.5 10H13v1.2h.04c.35-.66 1.2-1.36 2.46-1.36 2.63 0 3.12 1.73 3.12 3.98V18.5H16.1v-4.17c0-1-.02-2.29-1.4-2.29-1.4 0-1.61 1.1-1.61 2.22v4.24H10.5z" fill="currentColor"/></svg>
+                    </a>
+                    <a class="contact-icon" href="https://github.com/fikhrimasri" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.75a8.25 8.25 0 0 0-2.61 16.08c.41.08.56-.18.56-.4v-1.43c-2.28.5-2.76-.96-2.76-.96-.37-.94-.92-1.19-.92-1.19-.75-.52.06-.51.06-.51.83.06 1.26.85 1.26.85.74 1.27 1.94.9 2.41.69.08-.54.29-.9.52-1.11-1.82-.21-3.74-.91-3.74-4.07 0-.9.32-1.64.84-2.22-.08-.21-.36-1.05.08-2.19 0 0 .69-.22 2.27.85a7.8 7.8 0 0 1 4.13 0c1.58-1.07 2.27-.85 2.27-.85.44 1.14.16 1.98.08 2.19.52.58.84 1.32.84 2.22 0 3.17-1.93 3.86-3.77 4.06.3.26.56.77.56 1.56v2.31c0 .22.15.48.57.4A8.25 8.25 0 0 0 12 3.75Z" fill="currentColor"/></svg>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -391,6 +420,17 @@
 
         <footer class="terminal-footer">
           <p>[fikhri.design] crafted interface / 2026</p>
+          <div class="footer-socials">
+            <a class="contact-icon" href="mailto:masrifikhri@gmail.com" aria-label="Email Fikhri Masri">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75h18v10.5H3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m4.5 8.25 7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="contact-icon" href="https://linkedin.com/in/fikhri-masri" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.75 8.25a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM5.5 10h2.5v8.5H5.5zM10.5 10H13v1.2h.04c.35-.66 1.2-1.36 2.46-1.36 2.63 0 3.12 1.73 3.12 3.98V18.5H16.1v-4.17c0-1-.02-2.29-1.4-2.29-1.4 0-1.61 1.1-1.61 2.22v4.24H10.5z" fill="currentColor"/></svg>
+            </a>
+            <a class="contact-icon" href="https://github.com/fikhrimasri" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.75a8.25 8.25 0 0 0-2.61 16.08c.41.08.56-.18.56-.4v-1.43c-2.28.5-2.76-.96-2.76-.96-.37-.94-.92-1.19-.92-1.19-.75-.52.06-.51.06-.51.83.06 1.26.85 1.26.85.74 1.27 1.94.9 2.41.69.08-.54.29-.9.52-1.11-1.82-.21-3.74-.91-3.74-4.07 0-.9.32-1.64.84-2.22-.08-.21-.36-1.05.08-2.19 0 0 .69-.22 2.27.85a7.8 7.8 0 0 1 4.13 0c1.58-1.07 2.27-.85 2.27-.85.44 1.14.16 1.98.08 2.19.52.58.84 1.32.84 2.22 0 3.17-1.93 3.86-3.77 4.06.3.26.56.77.56 1.56v2.31c0 .22.15.48.57.4A8.25 8.25 0 0 0 12 3.75Z" fill="currentColor"/></svg>
+            </a>
+          </div>
         </footer>
       </div>
     </main>

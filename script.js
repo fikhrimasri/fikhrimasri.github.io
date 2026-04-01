@@ -10,7 +10,6 @@
   var outputRoute = document.getElementById("outputRoute");
   var outputStatus = document.getElementById("outputStatus");
   var outputLog = document.getElementById("outputLog");
-  var copyButtons = Array.from(document.querySelectorAll(".copy-button"));
   var storageKey = "portfolio-theme";
   var commandHistory = ["/about"];
   var historyIndex = commandHistory.length;
@@ -41,7 +40,11 @@
 
   function updateThemeLabel() {
     if (themeToggle) {
-      themeToggle.textContent = root.dataset.theme === "light" ? "dark" : "light";
+      var nextTheme = root.dataset.theme === "light" ? "dark" : "light";
+      themeToggle.textContent = nextTheme;
+      themeToggle.dataset.mode = nextTheme;
+      themeToggle.setAttribute("aria-label", "Switch to " + nextTheme + " mode");
+      themeToggle.setAttribute("title", "Switch to " + nextTheme + " mode");
     }
   }
 
@@ -185,35 +188,6 @@
       }
     });
   }
-
-  copyButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      var value = button.dataset.copy || "";
-      copyButtons.forEach(function (item) {
-        item.dataset.copied = "false";
-        if (item.textContent !== "copy") {
-          item.textContent = "copy";
-        }
-      });
-
-      if (!navigator.clipboard || !value) {
-        setOutputMeta("contact", "ready", "[warn] clipboard unavailable");
-        return;
-      }
-
-      navigator.clipboard.writeText(value).then(function () {
-        button.dataset.copied = "true";
-        button.textContent = "copied";
-        setOutputMeta("contact", "ready", "[ok] copied to clipboard :: " + value);
-        window.setTimeout(function () {
-          button.dataset.copied = "false";
-          button.textContent = "copy";
-        }, 1400);
-      }, function () {
-        setOutputMeta("contact", "ready", "[warn] copy failed");
-      });
-    });
-  });
 
   if (focusSignal) {
     var signalIndex = 0;
