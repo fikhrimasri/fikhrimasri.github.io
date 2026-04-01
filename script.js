@@ -20,7 +20,7 @@
     experience: "load_experience()",
     projects: "load_projects()",
     skills: "show_skills()",
-    artifacts: "load_artifacts()",
+    "publications-awards": "load_publications_awards()",
     education: "load_education()",
     contact: "init_contact()",
     help: "help()"
