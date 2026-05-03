@@ -10,7 +10,7 @@
   var outputRoute = document.getElementById("outputRoute");
   var outputStatus = document.getElementById("outputStatus");
   var outputLog = document.getElementById("outputLog");
-  var storageKey = "portfolio-theme";
+  var storageKey = "portfolio-theme-crisp-frost";
   var commandHistory = ["/about"];
   var historyIndex = commandHistory.length;
   var activeTimer = null;
@@ -27,7 +27,7 @@
   };
 
   var focusSignals = [
-    "spark_migration",
+    "platform_migration",
     "airflow_reliability",
     "b2b_monetization",
     "incident_monitoring"
